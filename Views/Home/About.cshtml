@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Use this area to provide additional information.</p>
+
+
+
+<div class="container">
+    <div class="row">
+        <div id="imgcarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#imgcarousel" data-slide-to="0"></li>
+                <li data-target="#imgcarousel" data-slide-to="1"></li>
+                <li data-target="#imgcarousel" data-slide-to="2" class="active"></li>
+                <li data-target="#imgcarousel" data-slide-to="3"></li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<div class="carousel-inner">
+    <!-- Navigation Controls -->
+    <a class="left carousel-control" href="#imgcarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+    </a>
+
+    <a class="right carousel-control" href="#imgcarousel" data-slide="next">
+        <span class="icon-next"></span>
+    </a>
+    <div class="item">
+        <img src="~/Content/images/test1.png" alt="My First Image" class="img-responsive" { width:390px !important; height:360px !important;} />
+
+    </div>
+
+    <div class="item">
+        <img src="~/Content/images/test2.png" alt="My Second Image" class="img-responsive"  { width:390px !important; height:360px !important;} />
+    </div>
+
+    <div class="item active">
+        <img src="~/Content/images/test3.png" alt="My Third Image" class="img-responsive"  { width:390px !important; height:360px !important;} />
+
+    </div>
+
+    <div class="item">
+        <img src="~/Content/images/test4.png" alt="My Fourth Image" class="img-responsive"  { width:390px !important; height:360px !important;} />
+    </div>
+</div>

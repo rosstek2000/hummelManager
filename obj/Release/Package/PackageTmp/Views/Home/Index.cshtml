@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h2 class="h2 text-success"><strong> Hummels... I love Hummels!!!</strong></h2>
+    <p class="text-success"><strong>Diverse collection for your viewing pleasure.</strong></p>   
+   
+    <div class="col-lg-2">
+        <p><img src="~/Content/images/test1.png" class="img-responsive img-rounded" { width:390px !important; height:360px !important;} /></p>
+       
+    </div>
+ 
+     <p><a class="btn btn-primary" @Html.ActionLink("Log in to discover", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</a></p>
+    <div><br /></div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Hummels?</h2>
+        <p>
+            Hummel figurines (also known as M.I. Hummel figurines or simply Hummels) are a series of porcelain figurines based on the drawings of Sister Maria.
+        </p>
+      
+     </div>
+    <div class="col-md-4">
+        <h2>My Collection</h2>
+        <p>Let me share with you.</p>
+        <p><a class="btn btn-primary" @Html.ActionLink("Log in to view", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</a></p>
+
+    </div>
+    <div class="col-md-4">
+        <h2>For sale</h2>
+        <p>Some of my beauties are for sale.</p><p><a class="btn btn-primary" @Html.ActionLink("Log in to purchase", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</p>
+ 
+    </div>
+   
+</div>
